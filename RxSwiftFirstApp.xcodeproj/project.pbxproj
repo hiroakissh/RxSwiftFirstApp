@@ -16,6 +16,9 @@
 		53427A682998C07400CF2BC4 /* RxSwiftFirstAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53427A672998C07400CF2BC4 /* RxSwiftFirstAppTests.swift */; };
 		53427A722998C07400CF2BC4 /* RxSwiftFirstAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53427A712998C07400CF2BC4 /* RxSwiftFirstAppUITests.swift */; };
 		53427A742998C07400CF2BC4 /* RxSwiftFirstAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53427A732998C07400CF2BC4 /* RxSwiftFirstAppUITestsLaunchTests.swift */; };
+		53A66D7F2998D6B4009251F4 /* QiitaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A66D7E2998D6B4009251F4 /* QiitaModel.swift */; };
+		53A66D812998D6C7009251F4 /* QiitaAPIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A66D802998D6C7009251F4 /* QiitaAPIViewModel.swift */; };
+		53A66D832998D6DD009251F4 /* QiitaAPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A66D822998D6DD009251F4 /* QiitaAPIViewController.swift */; };
 		53D5236E2998CD7500E33F48 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 53D5236D2998CD7500E33F48 /* RxCocoa */; };
 		53D523702998CD7500E33F48 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 53D5236F2998CD7500E33F48 /* RxSwift */; };
 /* End PBXBuildFile section */
@@ -51,6 +54,9 @@
 		53427A6D2998C07400CF2BC4 /* RxSwiftFirstAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwiftFirstAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53427A712998C07400CF2BC4 /* RxSwiftFirstAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftFirstAppUITests.swift; sourceTree = "<group>"; };
 		53427A732998C07400CF2BC4 /* RxSwiftFirstAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftFirstAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		53A66D7E2998D6B4009251F4 /* QiitaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaModel.swift; sourceTree = "<group>"; };
+		53A66D802998D6C7009251F4 /* QiitaAPIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaAPIViewModel.swift; sourceTree = "<group>"; };
+		53A66D822998D6DD009251F4 /* QiitaAPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaAPIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,7 @@
 		53427A4F2998C07200CF2BC4 /* RxSwiftFirstApp */ = {
 			isa = PBXGroup;
 			children = (
+				53A66D7A2998D637009251F4 /* QiitaAPICommunication */,
 				53427A502998C07200CF2BC4 /* AppDelegate.swift */,
 				53427A522998C07200CF2BC4 /* SceneDelegate.swift */,
 				53427A542998C07200CF2BC4 /* ViewController.swift */,
@@ -129,6 +136,40 @@
 				53427A732998C07400CF2BC4 /* RxSwiftFirstAppUITestsLaunchTests.swift */,
 			);
 			path = RxSwiftFirstAppUITests;
+			sourceTree = "<group>";
+		};
+		53A66D7A2998D637009251F4 /* QiitaAPICommunication */ = {
+			isa = PBXGroup;
+			children = (
+				53A66D7D2998D682009251F4 /* ViewModels */,
+				53A66D7C2998D67D009251F4 /* Models */,
+				53A66D7B2998D66B009251F4 /* Views */,
+			);
+			path = QiitaAPICommunication;
+			sourceTree = "<group>";
+		};
+		53A66D7B2998D66B009251F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				53A66D822998D6DD009251F4 /* QiitaAPIViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		53A66D7C2998D67D009251F4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				53A66D7E2998D6B4009251F4 /* QiitaModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		53A66D7D2998D682009251F4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				53A66D802998D6C7009251F4 /* QiitaAPIViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,7 +333,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53A66D7F2998D6B4009251F4 /* QiitaModel.swift in Sources */,
 				53427A552998C07200CF2BC4 /* ViewController.swift in Sources */,
+				53A66D832998D6DD009251F4 /* QiitaAPIViewController.swift in Sources */,
+				53A66D812998D6C7009251F4 /* QiitaAPIViewModel.swift in Sources */,
 				53427A512998C07200CF2BC4 /* AppDelegate.swift in Sources */,
 				53427A532998C07200CF2BC4 /* SceneDelegate.swift in Sources */,
 			);
