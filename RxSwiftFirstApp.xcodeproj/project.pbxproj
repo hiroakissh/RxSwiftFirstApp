@@ -18,6 +18,7 @@
 		53427A742998C07400CF2BC4 /* RxSwiftFirstAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53427A732998C07400CF2BC4 /* RxSwiftFirstAppUITestsLaunchTests.swift */; };
 		53427A822998C39500CF2BC4 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 53427A812998C39500CF2BC4 /* RxCocoa */; };
 		53427A842998C39500CF2BC4 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 53427A832998C39500CF2BC4 /* RxSwift */; };
+		53427A872998C43700CF2BC4 /* swiftlint in Frameworks */ = {isa = PBXBuildFile; productRef = 53427A862998C43700CF2BC4 /* swiftlint */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53427A842998C39500CF2BC4 /* RxSwift in Frameworks */,
+				53427A872998C43700CF2BC4 /* swiftlint in Frameworks */,
 				53427A822998C39500CF2BC4 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +152,7 @@
 			packageProductDependencies = (
 				53427A812998C39500CF2BC4 /* RxCocoa */,
 				53427A832998C39500CF2BC4 /* RxSwift */,
+				53427A862998C43700CF2BC4 /* swiftlint */,
 			);
 			productName = RxSwiftFirstApp;
 			productReference = 53427A4D2998C07200CF2BC4 /* RxSwiftFirstApp.app */;
@@ -225,6 +228,7 @@
 			mainGroup = 53427A442998C07200CF2BC4;
 			packageReferences = (
 				53427A802998C39500CF2BC4 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				53427A852998C43700CF2BC4 /* XCRemoteSwiftPackageReference "SwiftLint" */,
 			);
 			productRefGroup = 53427A4E2998C07200CF2BC4 /* Products */;
 			projectDirPath = "";
@@ -623,6 +627,14 @@
 				minimumVersion = 6.0.0;
 			};
 		};
+		53427A852998C43700CF2BC4 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -635,6 +647,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 53427A802998C39500CF2BC4 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		53427A862998C43700CF2BC4 /* swiftlint */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53427A852998C43700CF2BC4 /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = swiftlint;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
